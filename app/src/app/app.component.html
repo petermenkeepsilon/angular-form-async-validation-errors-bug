@@ -1,0 +1,7 @@
+<div>
+  Run validations? - {{ runValidations }}
+  <button (click)="runValidations = !runValidations">Toggle</button>
+
+  <input [formControl]="control" />
+  Error: {{ control.errors?.['error'] || '(none)' }}
+</div>
